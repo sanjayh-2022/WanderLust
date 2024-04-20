@@ -1,3 +1,4 @@
+require('dotenv').config();
 let listing=require("../models/listing.js");
 const Expresserror=require('../utils/Expresserror.js');
 const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding');
