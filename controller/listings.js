@@ -1,7 +1,7 @@
 require('dotenv').config();
 let listing=require("../models/listing.js");
 const Expresserror=require('../utils/Expresserror.js');
-const maptoken=pk.eyJ1IjoiaHNhbmpheSIsImEiOiJjbHY0M2k3MDIwNHR3Mm1xdGVsamt4aHEwIn0.M6rBMLxXLBHHoSpHLN8AEA
+const maptoken='pk.eyJ1IjoiaHNhbmpheSIsImEiOiJjbHY0M2k3MDIwNHR3Mm1xdGVsamt4aHEwIn0.M6rBMLxXLBHHoSpHLN8AEA'
 const mbxGeocoding =require('@mapbox/mapbox-sdk/services/geocoding');
 const geocodingClient= mbxGeocoding({accessToken:maptoken});
 
