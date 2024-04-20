@@ -24,7 +24,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.engine('ejs',ejsmate);
 app.use(methodoverride("_method"));
-const dbUrl='mongodb+srv://hsanjay:MlvFtDUUaR1oviTS@cluster0.xlrsxxr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const dbUrl=process.env.ATLAS_DB_URL;
 //sessionOptions ans store options
 
 const store=MongoStore.create({
